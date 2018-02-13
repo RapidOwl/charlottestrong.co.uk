@@ -1,0 +1,100 @@
+header {
+  background: url(../images/rebecca-johnston-17128.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* TODO Put the header image into :before so that we can manipulate it without affecting the rest of the header. */
+
+.header-grid {
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  padding: 40px;
+  grid-template-areas:
+    'hero hero hero hero hero hero hero'
+    'links links links links links links links';
+  grid-template-columns: 1fr 250px 1fr 250px 1fr 250px 1fr;
+  grid-template-rows: 1fr 200px;
+  grid-gap: 20px;
+  min-height: calc(100vh - 80px);
+}
+
+.header-grid a {
+  display: flex;
+}
+
+.centre-piece {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.centre-piece img {
+  max-height: 12em;
+  width: auto;
+}
+
+.centre-piece .header-name {
+  opacity: 0;
+  animation: heartbeat 3s 0.5s 1 ease-out forwards;
+}
+
+.centre-piece h2 {
+  opacity: 0;
+  transform: translateY(0);
+  animation: slide-in 3s 0.5s 1 cubic-bezier(0.33, 0.29, 0, 1) forwards;
+}
+
+.section-link {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.section-link p {
+  font-family: 'Milonga', cursive;
+}
+
+@keyframes heartbeat {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  12% {
+    opacity: 0.5;
+    transform: scale(1.08);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  52% {
+    opacity: 0.5;
+    transform: scale(1.08);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

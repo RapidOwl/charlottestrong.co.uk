@@ -1,0 +1,100 @@
+.main-content section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1px 0;
+}
+
+main .separator {
+  height: 40px;
+  margin: 40px 0 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header h2 {
+  padding: 0 30px;
+}
+
+.section-header img {
+  width: 200px;
+  height: 37px;
+}
+
+.about-me-content {
+  display: flex;
+}
+
+.about-me-content p:first-child {
+  margin-top: 0;
+}
+
+.about-me-photo {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #000;
+  padding: 5px;
+  transform: rotate(-3deg);
+  margin-right: 30px;
+}
+
+/* Torn paper stuff */
+
+.paper-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.paper-box {
+  height: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+.paper-box:before,
+.paper-box:after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  clip-path: polygon(
+    0% 0%,
+    5% 100%,
+    10% 0%,
+    15% 100%,
+    20% 0%,
+    25% 100%,
+    30% 0%,
+    35% 100%,
+    40% 0%,
+    45% 100%,
+    50% 0%,
+    55% 100%,
+    60% 0%,
+    65% 100%,
+    70% 0%,
+    75% 100%,
+    80% 0%,
+    85% 100%,
+    90% 0%,
+    95% 100%,
+    100% 0%
+  );
+}
+
+.paper-box:before {
+  background-color: #d3d3d3;
+  top: 0;
+}
+
+.paper-box:after {
+  background-color: #fff;
+  bottom: -2px;
+}
