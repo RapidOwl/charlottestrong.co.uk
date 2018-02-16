@@ -255,8 +255,13 @@
     </footer>
 
     <script>
-        // Smooth scrolling: https://jsfiddle.net/s61x7c4e/
+        document.body.className += " js-loading";
 
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.body.className = document.body.className.replace("js-loading", "");
+        });
+
+        // Smooth scrolling: https://jsfiddle.net/s61x7c4e/
         function getElementY(query) {
             return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top;
         }
