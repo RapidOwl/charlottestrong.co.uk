@@ -9,6 +9,7 @@
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/main-sections.css" rel="stylesheet">
+    <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
@@ -39,7 +40,6 @@
                 <p>Books I Loved</p>
                 <img class="separator flipped-separator" src="images/separator-white.svg" />
             </section>
-            <section></section>
         </section>
     </header>
     <main class="main">
@@ -233,6 +233,35 @@
                 </div>
             </div>
         </section>
+        <section class="main-content">
+            <div class="paper-wrapper" id="booksILoved">
+                <div class="paper-box">
+                    <div class="section-header">
+                        <img src="images/separator-black-left.svg" />
+                        <h2>Contact Me</h2>
+                        <img src="images/separator-black-right.svg" />
+                    </div>
+
+                    <div class="section-content">
+                        <form name="contact" class="c-contact-form" netlify>
+                            <p>
+                                <input type="text" name="name" placeholder="Your name" class="text-input" aria-label="Your name" />
+                            </p>
+                            <p>
+                                <input type="email" name="email" placeholder="Your email address" class="text-input" aria-label="Your email address" />
+                            </p>
+                            <p>
+                                <textarea rows="8" name="message" placeholder="Your message" class="text-input" aria-label="Your message"></textarea>
+                            </p>
+                            <p>
+                                <button type="submit" class="btn-submit">Send</button>
+                            </p>
+                        </form>
+                    </div>
+
+                    <img class="separator flipped-separator" src="images/separator-black.svg" />
+                </div>
+        </section>
     </main>
     <footer class="footer">
         <h3 class="heading">Credit</h3>
@@ -251,11 +280,12 @@
             </span>
             <span style="display:inline-block;padding:2px 3px;">Background Image by Rebecca Johnston</span>
         </a>
+        <a class="link" href="https://github.com/dixonandmoe/rellax" " target="_blank ">Parallax</a>
     </footer>
 
-    <script src="scripts/AnimationDelay.js"></script>
-    <script src="scripts/FancyScroll.js"></script>
-    <script src="scripts/rellax.min.js"></script>
+    <script src="scripts/AnimationDelay.js "></script>
+    <script src="scripts/FancyScroll.js "></script>
+    <script src="scripts/rellax.min.js "></script>
 
     <script>
         // Accepts any class name
