@@ -1,16 +1,22 @@
 .footer {
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  background-color: #000;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
 }
 
-.footer > .heading {
-  margin: 0 0 20px;
-  padding: 0;
+.footer>.heading {
+	color: #fff;
+	margin: 0 0 20px;
+	padding: 0;
 }
 
-.footer > .link {
-  margin: 0 20px;
-  color: #fff;
+.footer a.link {
+	margin: 0 20px;
+	color: #fff;
+
+}
+
+.footer p {
+	margin-bottom: 8px;
 }

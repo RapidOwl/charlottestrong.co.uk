@@ -6,5 +6,16 @@ header {
 }
 
 header img {
-  width: 100%;
+	width: 100%;
+}
+
+@media all and (max-width: 600px) {
+	header h1 {
+		margin-bottom: 15px;
+	}
+
+	header h2 {
+		font-size: 36px;
+		margin-top: 15px;
+	}
 }
